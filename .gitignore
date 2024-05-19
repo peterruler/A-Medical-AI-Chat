@@ -1,0 +1,7 @@
+.venv/
+.env
+__pycache__/
+.chainlit/
+.files/
+BioMistral-7B.Q5_K_M.gguf
+MedLlama-2-7B.q5_K_M.gguf

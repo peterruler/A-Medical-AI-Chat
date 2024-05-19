@@ -1,0 +1,14 @@
+# Modelfile
+
+FROM "./BioMistral-7B.Q5_K_M.gguf"
+
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+
+TEMPLATE """
+<|im_start|>system
+{{ .System }}<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
