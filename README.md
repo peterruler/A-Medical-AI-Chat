@@ -3,6 +3,14 @@
 # Based on a youtube clip
 - https://www.youtube.com/watch?v=bANziaFj_sA
 
+# installation of python conda env
+- install miniconda first https://docs.conda.io/en/latest/miniconda.html
+- `conda create --name torch python=3.9`
+- `conda activate torch`
+- `pip install transformers==4.20.0`
+- `conda install torch`
+- `python -m ipykernel install --user --name torch --display-name "Python 3.9 (torch)"`
+
 # create a pytorch conda environment suiting your system
 - Create new env from Jeff Heaton Youtube / Github pages
 - MacOS M1 https://www.youtube.com/watch?v=VEDy-c5Sk8Y&t=380s
