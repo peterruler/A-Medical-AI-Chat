@@ -23,6 +23,10 @@
 - Create the ollama file from model:
 - `ollama create biomistral -f Modelfile`
 
+# GPU Acceleration M1 MacOS - use mps
+- if using conda: `conda install pytorch torchvision torchaudio -c pytorch-nightly`
+- or with pip: `pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu`
+
 # Or with Metal GPU acceleration for macOS systems only (optional)
 - `CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python`
 
