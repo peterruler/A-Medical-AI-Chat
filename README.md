@@ -41,10 +41,10 @@ python -m pip install -U "huggingface_hub[cli]"
 - select via Space - don't select no action then enter und choose Y(es)
 
 # Test commandline chat
-ollama run biomistral
+- `ollama run biomistral`
 
 # Exit chat
-/bye
+- stop by typing: `/bye`
 
 # Use env alternatively to conda
 - https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
