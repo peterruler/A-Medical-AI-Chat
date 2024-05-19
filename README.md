@@ -54,7 +54,7 @@ source venv/bin/activate
 # install dependencies
 - `cd langchain-gemma-ollama-chainlit`
 `pip install -r requirements.txt`
-- or more comlicated, seperqatly:
+- or more comlicated, seperately:
 ```
 pip install langchain
 pip install chainlit
