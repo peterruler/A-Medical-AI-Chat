@@ -14,7 +14,7 @@
 # Load Model - BioMistral-7B.Q5_K_M.gguf
 - First install the huggingface-cli:
 - `pip3 install huggingface-hub`
-- Load the model file to local cache (danger habe 20GB of free space):
+- Load the model file to local cache (danger have 20GB of free space):
 - `huggingface-cli download MaziyarPanahi/BioMistral-7B-GGUF BioMistral-7B.Q5_K_M.gguf --local-dir . --local-dir-use-symlinks False`
 
 # Download Ollama Commandline Tool
