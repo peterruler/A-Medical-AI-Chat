@@ -56,6 +56,7 @@ python -m pip install -U "huggingface_hub[cli]"
 - enter `deactivate` in the console
 
 # install dependencies
+- `conda activate torch`
 - `cd langchain-gemma-ollama-chainlit`
 - `pip install -r requirements.txt`
 - or more complicated, seperately:
