@@ -26,7 +26,7 @@
 # Or with Metal GPU acceleration for macOS systems only (optional)
 - `CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python`
 
-# Aditional browse for other med guuf M1 Mac models
+# Additional browse for other med guuf M1 Mac models
 - for MacOS M1 Soc GPU no Cuda (PC & Linux)
 - https://huggingface.co/search/full-text?q=health+gguf&type=model
 
