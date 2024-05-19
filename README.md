@@ -53,7 +53,7 @@ ollama run biomistral
 
 # install dependencies
 - `cd langchain-gemma-ollama-chainlit`
-`pip install -r requirements.txt`
+- `pip install -r requirements.txt`
 - or more complicated, seperately:
 ```
 pip install langchain
