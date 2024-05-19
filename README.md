@@ -43,18 +43,18 @@ ollama run biomistral
 /bye
 
 # Use env alternatively to conda
-https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
-pip install virtualenv
-virtualenv venv
-source venv/bin/activate
+- https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
+- pip install virtualenv
+- virtualenv venv
+- source venv/bin/activate
 
 # exit env
-- enter deactivate in the console
+- enter `deactivate` in the console
 
 # install dependencies
 - `cd langchain-gemma-ollama-chainlit`
 `pip install -r requirements.txt`
-- or more comlicated, seperately:
+- or more complicated, seperately:
 ```
 pip install langchain
 pip install chainlit
