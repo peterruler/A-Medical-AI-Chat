@@ -66,8 +66,9 @@ pip install openai
 ```
 
 # run chainlit chat
-cd to langchain-gemma-oollama-chainlit dirextory and run:
-chainlit run langchain-gemma-ollama-chainlit.py
+- `cd langchain-gemma-oollama-chainlit` change directory 
+- and run the chat in a browser:
+- `chainlit run langchain-gemma-ollama-chainlit.py`
 
 # Example prompts
 - What are the symptoms of the common cold?
