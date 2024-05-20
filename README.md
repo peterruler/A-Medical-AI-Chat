@@ -3,11 +3,18 @@
 # Based on a youtube clip
 - https://www.youtube.com/watch?v=bANziaFj_sA
 
+# Chainlit Documentation
+- https://docs.chainlit.io/get-started/overview
+
 # installation of python conda env
 - install miniconda first https://docs.conda.io/en/latest/miniconda.html
 - `conda create --name torch python=3.9`
 - `conda activate torch`
 - `pip install transformers==4.20.0`
+- `pip install langchain`
+- `pip install chainlit`
+- `pip install openai`
+- `pip install googletrans==4.0.0-rc1`
 - `conda install torch  -c pytorch-nightly`
 - `python -m ipykernel install --user --name torch --display-name "Python 3.9 (torch)"`
 
@@ -22,11 +29,11 @@
 # Load Model - BioMistral-7B.Q5_K_M.gguf
 - First install the huggingface-cli:
 - `pip3 install huggingface-hub`
-- Load the model file to local cache (danger have 20GB of free space):
+- Load the model file to local cache (danger, have at least 6 GB of free space):
 - `huggingface-cli download MaziyarPanahi/BioMistral-7B-GGUF BioMistral-7B.Q5_K_M.gguf --local-dir . --local-dir-use-symlinks False`
 
 # Download Ollama Commandline Tool
-- From URL: https://ollama.ai/ - and install for your system
+- From URL: https://ollama.ai/ - install for your system
 - Check in a terminal: `ollama -v`
 - Create the ollama file from model:
 - `ollama create biomistral -f Modelfile`
@@ -61,7 +68,7 @@
 # exit env
 - enter `deactivate` in the console
 
-# install dependencies
+# install dependencies (again optional)
 - `conda activate torch`
 - `cd langchain-gemma-ollama-chainlit`
 - `pip install -r requirements.txt`
@@ -70,6 +77,7 @@
 pip install langchain
 pip install chainlit
 pip install openai
+pip install googletrans==4.0.0-rc1
 ```
 
 # run chainlit chat
