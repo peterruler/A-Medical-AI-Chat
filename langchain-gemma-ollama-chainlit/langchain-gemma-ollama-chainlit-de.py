@@ -5,10 +5,6 @@ from langchain.schema.runnable import Runnable
 from langchain.schema.runnable.config import RunnableConfig
 
 import chainlit as cl
-from googletrans import Translator
-
-
-translator = Translator()
 
 @cl.on_chat_start
 async def on_chat_start():
@@ -18,12 +14,12 @@ async def on_chat_start():
     cl.Image(name="image1", display="inline", path="gemma.jpeg")
     ]
     await cl.Message(content="Hello there, I am Gemma. How can I help you ?", elements=elements).send()
-    model = Ollama(model="biomistral")
+    model = Ollama(model="biomistral1")
     prompt = ChatPromptTemplate.from_messages(
         [
             (
                 "system",
-                "You're a very knowledgeable doctor. Provide just the answer related to medical field.",
+                "Sie sind ein sehr kompetenter Arzt. Geben Sie nur die Antwort, die sich auf den medizinischen Bereich bezieht.",
             ),
             ("human", "{question}"),
         ]
@@ -38,7 +34,6 @@ async def on_message(message: cl.Message):
     runnable = cl.user_session.get("runnable")  # type: Runnable
 
     msg = cl.Message(content="")
-    message.content = translator.translate(message.content, src='de', dest='en').text
     async for chunk in runnable.astream(
         {"question": message.content},
         config=RunnableConfig(callbacks=[cl.LangchainCallbackHandler()]),
@@ -46,12 +41,3 @@ async def on_message(message: cl.Message):
         await msg.stream_token(chunk)
 
     await msg.send()
-'''
-@cl.on_message
-async def main(message: str):
-    # Übersetze die eingehende Nachricht vom Englischen ins Deutsche
-    translated_response = translator.translate(message.content, src='en', dest='de').text
-
-    # Sende die übersetzte Antwort als Antwort zurück
-    await cl.Message(content=str(translated_response)).send()
-'''
