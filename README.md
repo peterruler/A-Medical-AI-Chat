@@ -8,15 +8,15 @@
 - `conda create --name torch python=3.9`
 - `conda activate torch`
 - `pip install transformers==4.20.0`
-- `conda install torch`
+- `conda install torch  -c pytorch-nightly`
 - `python -m ipykernel install --user --name torch --display-name "Python 3.9 (torch)"`
 
-# create a pytorch conda environment suiting your system
+# create a pytorch conda environment (optional)
 - Create new env from Jeff Heaton Youtube / Github pages
 - MacOS M1 https://www.youtube.com/watch?v=VEDy-c5Sk8Y&t=380s
 - other: https://www.youtube.com/results?search_query=jeff+heaton+pytorch+installation
 
-- then activate this env
+- then activate env by typing in console:
 - `conda activate torch`
 
 # Load Model - BioMistral-7B.Q5_K_M.gguf
@@ -35,18 +35,16 @@
 - if using conda: `conda install pytorch torchvision torchaudio -c pytorch-nightly`
 - or with pip: `pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu`
 
-# Or with Metal GPU acceleration for macOS systems only (optional)
-- `CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python`
-
-# Additional browse for other med guuf M1 Mac models
-- for MacOS M1 Soc GPU no Cuda (PC & Linux)
+# Additional browse for other med gguf M1 Mac models
+- for MacOS M1 SOC GPU no Cuda (PC & Linux)
 - https://huggingface.co/search/full-text?q=health+gguf&type=model
 
 # Delete Models in Huggingface cache if not needed or HD is full
-- cd ~/.cache/huggingface/hub
-python -m pip install -U "huggingface_hub[cli]"
-- huggingface-cli delete-cache
-- select via Space - don't select no action then enter und choose Y(es)
+- show llms: `cd ~/.cache/huggingface/hub`
+- `ls -lia`
+- `python -m pip install -U "huggingface_hub[cli]"`
+- start removing llms: `huggingface-cli delete-cache`
+- select via `Space` - don't select no action then enter und choose `Y`(es)
 
 # Test commandline chat
 - `ollama run biomistral`
@@ -56,9 +54,9 @@ python -m pip install -U "huggingface_hub[cli]"
 
 # Use env alternatively to conda
 - https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
-- pip install virtualenv
-- virtualenv venv
-- source venv/bin/activate
+- `pip install virtualenv`
+- `virtualenv venv`
+- `source venv/bin/activate`
 
 # exit env
 - enter `deactivate` in the console
@@ -75,7 +73,7 @@ pip install openai
 ```
 
 # run chainlit chat
-- `cd langchain-gemma-oollama-chainlit` change directory 
+- `cd langchain-gemma-ollama-chainlit` change directory 
 - and run the chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit.py`
 
@@ -89,11 +87,11 @@ pip install openai
 - https://rentry.org/cpu-lora
 
 # run another model -> failed in my case
-- huggingface-cli download garcianacho/MedLlama-2-7B-GGUF MedLlama-2-7B.q5_K_M.gguf --local-dir . --local-dir-use-symlinks False
+- `huggingface-cli download garcianacho/MedLlama-2-7B-GGUF MedLlama-2-7B.q5_K_M.gguf --local-dir . --local-dir-use-symlinks False`
 
-- ollama create medllama2 -f ModelfileMedLLama
+- `ollama create medllama2 -f ModelfileMedLLama`
 
-- ollama run medlama2
+- `ollama run medlama2`
 
-# Screenshot Demo
+# Screenshot of demo
 ![Proof](/proof.png?raw=true "It works")
