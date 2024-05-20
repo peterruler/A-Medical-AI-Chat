@@ -32,6 +32,18 @@
 - Load the model file to local cache (danger, have at least 6 GB of free space):
 - `huggingface-cli download MaziyarPanahi/BioMistral-7B-GGUF BioMistral-7B.Q5_K_M.gguf --local-dir . --local-dir-use-symlinks False`
 
+# Load Model - ggml-model-Q8_0.gguf - in Deutsch (!!!)
+- Load the model file to local cache (danger, have at least 6 GB of free space):
+- `huggingface-cli download BioMistral/BioMistral-7B-GGUF ggml-model-Q8_0.gguf --local-dir . --local-dir-use-symlinks False`
+- `ollama create biomistral1 -f Modelfile01`
+- `ollama run biomistral1`
+- `cd langchain-gemma-ollama-chainlit` change directory 
+- and run the chat in a browser:
+- `chainlit run langchain-gemma-ollama-chainlit-de.py`
+
+- Auch in Deutsch (!!!)
+- `ollama run mistral:latest`
+
 # Download Ollama Commandline Tool
 - From URL: https://ollama.ai/ - install for your system
 - Check in a terminal: `ollama -v`
@@ -102,4 +114,4 @@ pip install googletrans==4.0.0-rc1
 - `ollama run medlama2`
 
 # Screenshot of demo
-![Proof](/proof.png?raw=true "It works")
+![Proof](/german-proof.png?raw=true "It works")

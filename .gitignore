@@ -5,3 +5,5 @@ __pycache__/
 .files/
 BioMistral-7B.Q5_K_M.gguf
 MedLlama-2-7B.q5_K_M.gguf
+.huggingface/
+ggml-model-Q8_0.gguf
