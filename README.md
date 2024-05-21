@@ -102,6 +102,14 @@ pip install googletrans==4.0.0-rc1
 - What causes the seasonal flu?
 - What medication would be prescribed for a headache?
 
+# Example prompts (german)
+- Was sind die Symptome einer Erkältung?
+- Was verursacht die saisonale Grippe?
+- Welche Medikamente würden gegen Kopfschmerzen verschrieben?
+- ollama run mistral:latest
+- Wie importiert man ein Package in Java?
+- Wie definiert man einen Type mit einem String und einem boolean in Typescript?
+
 # finetune  gguf models (optional)
 - https://github.com/ggerganov/llama.cpp/tree/master/examples/finetune
 - https://rentry.org/cpu-lora
