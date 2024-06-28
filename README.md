@@ -84,22 +84,10 @@
 - start removing llms: `huggingface-cli delete-cache`
 - select via `Space` - don't select no action then enter und choose `Y`(es)
 
-# Install dependencies  (optional)
-- `conda activate torch`
-- `cd langchain-gemma-ollama-chainlit`
-- `pip install -r requirements.txt`
-- or more complicated, seperately:
-```
-pip install langchain
-pip install chainlit
-pip install openai
-pip install googletrans==4.0.0-rc1
-```
-
 # run chainlit chat (optional)
 - `cd langchain-gemma-ollama-chainlit` change directory 
 - and run the chat in a browser:
-- `chainlit run langchain-gemma-ollama-chainlit.py`
+- `chainlit run langchain-gemma-ollama-chainlit-de.py`
 
 # Example prompts
 - What are the symptoms of the common cold?
