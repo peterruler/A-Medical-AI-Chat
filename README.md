@@ -2,14 +2,17 @@
 
 # Prerequisites
 - install ollama https://ollama.com
+- From URL: https://ollama.ai/ - install for your system
 - choose the models for yur domain: https://ollama.com/library
 - mistral is in german
 - `ollama run mistral:latest` first call downloads model and runs it
 - same command to run a prompt
 - Bookmark the olama terminal in dock
+- Check in a terminal: `ollama -v`
+- `ollama list` lists the installed models
 
 # Test commandline chat
-- `ollama run biomistral` 7b - german
+- `ollama run biomistral` 7b - german, then alk sth. in german, see example prompts further down
 
 # Exit chat
 - stop commmandline chat by typing: `/bye`
@@ -23,19 +26,21 @@
 # Chainlit Documentation
 - https://docs.chainlit.io/get-started/overview
 
-# installation of python conda env
+# Installation of python conda env
 - install miniconda first https://docs.conda.io/en/latest/miniconda.html
+- then
 - `conda create --name torch python=3.9`
 - `conda activate torch`
+- `pip install -r ./langchain-gemma-ollama-chainlit/requirements.txt`s
+- `python -m ipykernel install --user --name torch --display-name "Python 3.9 (torch)"`
 - `pip install transformers==4.20.0`
 - `pip install langchain`
 - `pip install chainlit`
 - `pip install openai`
 - `pip install googletrans==4.0.0-rc1`
 - `conda install torch  -c pytorch-nightly`
-- `python -m ipykernel install --user --name torch --display-name "Python 3.9 (torch)"`
 
-# create a pytorch conda environment (optional)
+# Create a pytorch conda environment (optional)
 - Create new env from Jeff Heaton Youtube / Github pages
 - MacOS M1 https://www.youtube.com/watch?v=VEDy-c5Sk8Y&t=380s
 - other: https://www.youtube.com/results?search_query=jeff+heaton+pytorch+installation
@@ -54,10 +59,7 @@
 - and run the chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
 
-# Download Ollama Commandline Tool
-- From URL: https://ollama.ai/ - install for your system
-- Check in a terminal: `ollama -v`
-- `ollama list` lists the installed models
+# Install a model thats not listed in the ollama directory
 - Create the ollama file from model:
 - `ollama create biomistral -f Modelfile`
 
@@ -76,16 +78,7 @@
 - start removing llms: `huggingface-cli delete-cache`
 - select via `Space` - don't select no action then enter und choose `Y`(es)
 
-# Use env alternatively to conda
-- https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
-- `pip install virtualenv`
-- `virtualenv venv`
-- `source venv/bin/activate`
-
-# exit env
-- enter `deactivate` in the console
-
-# install dependencies (again optional)
+# Install dependencies (again optional)
 - `conda activate torch`
 - `cd langchain-gemma-ollama-chainlit`
 - `pip install -r requirements.txt`
@@ -118,13 +111,6 @@ pip install googletrans==4.0.0-rc1
 # finetune  gguf models (optional)
 - https://github.com/ggerganov/llama.cpp/tree/master/examples/finetune
 - https://rentry.org/cpu-lora
-
-# run another model -> failed in my case
-- `huggingface-cli download garcianacho/MedLlama-2-7B-GGUF MedLlama-2-7B.q5_K_M.gguf --local-dir . --local-dir-use-symlinks False`
-
-- `ollama create medllama2 -f ModelfileMedLLama`
-
-- `ollama run medlama2`
 
 # Screenshot of demo
 ![Proof](/german-proof.png?raw=true "It works")
