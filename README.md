@@ -3,15 +3,17 @@
 # Prerequisites
 - install ollama https://ollama.com - install for your system
 - choose the models for your domain: https://ollama.com/library
-- mistral is in german
-- `ollama run mistral:latest` first call downloads model and runs it
+- mistral is also in german
+- `ollama run mistral:latest` first call downloads model and runs it, ask something like:
+- `Schreibe mir ein Python Flask Server, der ein Hello World zurück gibt`
 - same command to run a prompt
 - Bookmark the olama terminal in dock
 - Check in a terminal: `ollama -v`
 - `ollama list` lists the installed models
 
 # Test commandline chat
-- `ollama run biomistral` 7b - german, then alk sth. in german, see example prompts further down
+- `ollama run biomistral` 7b - german, then ask sth. in german, see example prompts further down
+- `Was ist der haupt Wirkstoff in Aspirin?`
 
 # Exit chat
 - stop commmandline chat by typing: `/bye`
