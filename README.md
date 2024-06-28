@@ -39,6 +39,10 @@
 - `pip install googletrans==4.0.0-rc1`
 - `conda install torch  -c pytorch-nightly`
 
+# GPU Acceleration M1 MacOS - use mps
+- if using conda: `conda install pytorch torchvision torchaudio -c pytorch-nightly`
+- or with pip: `pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu`
+
 # Create a pytorch conda environment (optional)
 - Create new env from Jeff Heaton Youtube / Github pages
 - MacOS M1 https://www.youtube.com/watch?v=VEDy-c5Sk8Y&t=380s
@@ -48,6 +52,7 @@
 - `conda activate torch`
 
 # Load Model - ggml-model-Q8_0.gguf - 7B Model  - M1 Mac needed - in german
+- In case a model is not listed on https://ollama.com/library:
 - First install the huggingface-cli:
 - `pip3 install huggingface-hub`
 - Load the model file to local cache (danger, have at least 6 GB of free space):
@@ -55,16 +60,15 @@
 - `ollama create biomistral1 -f Modelfile`
 - `ollama run biomistral1`
 - `cd langchain-gemma-ollama-chainlit` change directory 
+
+# Run the chainlit-chat
+- replace in langchain-gemma-ollama-chainlit-de.py: `model = Ollama(model="gemma:2b")` - instead of gemma:2b with your model name e.g. mistral:latest.
 - and run the chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
 
-# Install a model thats not listed in the ollama directory
+# Install a model thats not listed in the ollama directory (/library)
 - Create the ollama file from model:
 - `ollama create biomistral -f Modelfile`
-
-# GPU Acceleration M1 MacOS - use mps
-- if using conda: `conda install pytorch torchvision torchaudio -c pytorch-nightly`
-- or with pip: `pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu`
 
 # Additional browse for other med gguf M1 Mac models
 - for MacOS M1 SOC GPU no Cuda (PC & Linux)
@@ -107,7 +111,7 @@ pip install googletrans==4.0.0-rc1
 - Wie importiert man ein Package in Java?
 - Wie definiert man einen Type mit einem String und einem boolean in Typescript?
 
-# finetune  gguf models (optional)
+# finetune gguf models (optional)
 - https://github.com/ggerganov/llama.cpp/tree/master/examples/finetune
 - https://rentry.org/cpu-lora
 
