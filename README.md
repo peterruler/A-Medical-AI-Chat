@@ -65,7 +65,7 @@
 - `cd langchain-gemma-ollama-chainlit` change directory 
 
 # Run the chainlit-chat (optional)
-- replace in langchain-gemma-ollama-chainlit-de.py: `model = Ollama(model="gemma:2b")` - instead of gemma:2b with your model name e.g. mistral:latest.
+- replace in langchain-gemma-ollama-chainlit-de.py: `model = Ollama(model="gemma:2b")` - instead of gemma:2b with your model name e.g. mistral:latest or `biomistral1`.
 - and run the chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
 
