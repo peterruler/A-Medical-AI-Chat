@@ -27,7 +27,7 @@
 # Chainlit Documentation
 - https://docs.chainlit.io/get-started/overview
 
-# Installation of python conda env
+# Installation of python conda env (optional)
 - install miniconda first https://docs.conda.io/en/latest/miniconda.html
 - then
 - `conda create --name torch python=3.9`
@@ -41,7 +41,7 @@
 - `pip install googletrans==4.0.0-rc1`
 - `conda install torch  -c pytorch-nightly`
 
-# GPU Acceleration M1 MacOS - use mps
+# GPU Acceleration M1 MacOS - use mps (optional)
 - if using conda: `conda install pytorch torchvision torchaudio -c pytorch-nightly`
 - or with pip: `pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu`
 
@@ -53,7 +53,7 @@
 - then activate env by typing in console:
 - `conda activate torch`
 
-# Load Model - ggml-model-Q8_0.gguf - 7B Model  - M1 Mac needed - in german
+# Load Model - ggml-model-Q8_0.gguf - 7B Model  - M1 Mac needed - in german (optional)
 - In case a model is not listed on https://ollama.com/library:
 - First install the huggingface-cli:
 - `pip3 install huggingface-hub`
@@ -63,12 +63,12 @@
 - `ollama run biomistral1`
 - `cd langchain-gemma-ollama-chainlit` change directory 
 
-# Run the chainlit-chat
+# Run the chainlit-chat (optional)
 - replace in langchain-gemma-ollama-chainlit-de.py: `model = Ollama(model="gemma:2b")` - instead of gemma:2b with your model name e.g. mistral:latest.
 - and run the chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
 
-# Install a model thats not listed in the ollama directory (/library)
+# Install a model thats not listed in the ollama directory (/library) (optional)
 - Create the ollama file from model:
 - `ollama create biomistral -f Modelfile`
 
@@ -83,7 +83,7 @@
 - start removing llms: `huggingface-cli delete-cache`
 - select via `Space` - don't select no action then enter und choose `Y`(es)
 
-# Install dependencies (again optional)
+# Install dependencies  (optional)
 - `conda activate torch`
 - `cd langchain-gemma-ollama-chainlit`
 - `pip install -r requirements.txt`
@@ -95,7 +95,7 @@ pip install openai
 pip install googletrans==4.0.0-rc1
 ```
 
-# run chainlit chat
+# run chainlit chat (optional)
 - `cd langchain-gemma-ollama-chainlit` change directory 
 - and run the chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit.py`
