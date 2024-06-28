@@ -2,7 +2,7 @@
 
 # Prerequisites
 - install ollama https://ollama.com - install for your system
-- choose the models for yur domain: https://ollama.com/library
+- choose the models for your domain: https://ollama.com/library
 - mistral is in german
 - `ollama run mistral:latest` first call downloads model and runs it
 - same command to run a prompt
