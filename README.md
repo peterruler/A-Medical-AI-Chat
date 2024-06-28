@@ -1,5 +1,22 @@
 # A Medical AI Chat
 
+# Prerequisites
+- install ollama https://ollama.com
+- choose the models for yur domain: https://ollama.com/library
+- mistral is in german
+- `ollama run mistral:latest` first call downloads model and runs it
+- same command to run a prompt
+- Bookmark the olama terminal in dock
+
+# Test commandline chat
+- `ollama run biomistral` 7b - german
+
+# Exit chat
+- stop commmandline chat by typing: `/bye`
+
+# use as a chainlit chat
+- to use ollama as a python chainlit chat you can do the following:
+
 # Based on a youtube clip
 - https://www.youtube.com/watch?v=bANziaFj_sA
 
@@ -26,27 +43,21 @@
 - then activate env by typing in console:
 - `conda activate torch`
 
-# Load Model - BioMistral-7B.Q5_K_M.gguf
+# Load Model - ggml-model-Q8_0.gguf - 7B Model  - M1 Mac needed - in german
 - First install the huggingface-cli:
 - `pip3 install huggingface-hub`
 - Load the model file to local cache (danger, have at least 6 GB of free space):
-- `huggingface-cli download MaziyarPanahi/BioMistral-7B-GGUF BioMistral-7B.Q5_K_M.gguf --local-dir . --local-dir-use-symlinks False`
-
-# Load Model - ggml-model-Q8_0.gguf - in Deutsch (!!!)
-- Load the model file to local cache (danger, have at least 6 GB of free space):
 - `huggingface-cli download BioMistral/BioMistral-7B-GGUF ggml-model-Q8_0.gguf --local-dir . --local-dir-use-symlinks False`
-- `ollama create biomistral1 -f Modelfile01`
+- `ollama create biomistral1 -f Modelfile`
 - `ollama run biomistral1`
 - `cd langchain-gemma-ollama-chainlit` change directory 
 - and run the chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
 
-- Auch in Deutsch (!!!)
-- `ollama run mistral:latest`
-
 # Download Ollama Commandline Tool
 - From URL: https://ollama.ai/ - install for your system
 - Check in a terminal: `ollama -v`
+- `ollama list` lists the installed models
 - Create the ollama file from model:
 - `ollama create biomistral -f Modelfile`
 
@@ -64,12 +75,6 @@
 - `python -m pip install -U "huggingface_hub[cli]"`
 - start removing llms: `huggingface-cli delete-cache`
 - select via `Space` - don't select no action then enter und choose `Y`(es)
-
-# Test commandline chat
-- `ollama run biomistral`
-
-# Exit chat
-- stop by typing: `/bye`
 
 # Use env alternatively to conda
 - https://sourabhbajaj.com/mac-setup/Python/virtualenv.html

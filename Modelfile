@@ -1,6 +1,6 @@
 # Modelfile
 
-FROM "./BioMistral-7B.Q5_K_M.gguf"
+FROM "./ggml-model-Q8_0.gguf"
 
 PARAMETER stop "<|im_start|>"
 PARAMETER stop "<|im_end|>"
