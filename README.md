@@ -1,8 +1,7 @@
 # A Medical AI Chat
 
 # Prerequisites
-- install ollama https://ollama.com
-- From URL: https://ollama.ai/ - install for your system
+- install ollama https://ollama.com - install for your system
 - choose the models for yur domain: https://ollama.com/library
 - mistral is in german
 - `ollama run mistral:latest` first call downloads model and runs it
