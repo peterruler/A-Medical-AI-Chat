@@ -12,7 +12,7 @@
 - same command to run a prompt
 - Bookmark the olama terminal in dock
 - Check in a terminal: `ollama -v`
-- `ollama list` lists the installed models![alt text](aspirin.png)
+- `ollama list` lists the installed models!
 
 # Test commandline chat
 - `ollama run biomistral` 7b - german, then ask sth. in german, see example prompts further down
