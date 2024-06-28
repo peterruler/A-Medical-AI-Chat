@@ -30,7 +30,7 @@
 - then
 - `conda create --name torch python=3.9`
 - `conda activate torch`
-- `pip install -r ./langchain-gemma-ollama-chainlit/requirements.txt`s
+- `pip install -r ./langchain-gemma-ollama-chainlit/requirements.txt`
 - `python -m ipykernel install --user --name torch --display-name "Python 3.9 (torch)"`
 - `pip install transformers==4.20.0`
 - `pip install langchain`
