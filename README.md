@@ -1,6 +1,7 @@
 # A Medical AI Chat
 
 # Prerequisites
+- Have a fast, modern PC or a M1 Mac
 - install ollama https://ollama.com - install for your system
 - choose the models for your domain: https://ollama.com/library
 - mistral is also in german
