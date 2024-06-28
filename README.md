@@ -7,14 +7,17 @@
 - mistral is also in german
 - `ollama run mistral:latest` first call downloads model and runs it, ask something like:
 - `Schreibe mir ein Python Flask Server, der ein Hello World zurück gibt`
+
+![Proof](/flask.png?raw=true "flask")
 - same command to run a prompt
 - Bookmark the olama terminal in dock
 - Check in a terminal: `ollama -v`
-- `ollama list` lists the installed models
+- `ollama list` lists the installed models![alt text](aspirin.png)
 
 # Test commandline chat
 - `ollama run biomistral` 7b - german, then ask sth. in german, see example prompts further down
 - `Was ist der haupt Wirkstoff in Aspirin?`
+![Proof](/aspirin.png?raw=true "biomistral")
 
 # Exit chat
 - stop commmandline chat by typing: `/bye`
@@ -107,4 +110,5 @@
 - https://rentry.org/cpu-lora
 
 # Screenshot of demo
+
 ![Proof](/german-proof.png?raw=true "It works")
