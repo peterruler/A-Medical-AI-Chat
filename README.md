@@ -55,7 +55,7 @@
 - if using conda: `conda install pytorch torchvision torchaudio -c pytorch-nightly`
 - or with pip: `pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu`
 
-# Create a pytorch conda environment (optional)
+# Detailed explanation, create a pytorch conda environment (optional)
 - Create new env from Jeff Heaton Youtube / Github pages
 - MacOS M1 https://www.youtube.com/watch?v=VEDy-c5Sk8Y&t=380s
 - other: https://www.youtube.com/results?search_query=jeff+heaton+pytorch+installation
