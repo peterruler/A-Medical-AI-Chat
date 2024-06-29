@@ -20,7 +20,7 @@
 - https://mistral.ai/news/mistral-large
 
 # Test commandline chat
-- `ollama run biomistral1` 7b - german, then ask sth. in german, see example prompts and needed Modelfile further down
+- download and install via Modelfile first, then: `ollama run biomistral1` 7b - german, then ask sth. in german, see example prompts and needed Modelfile further down
 - `/?` for help
 - `Was ist der Haupt-Wirkstoff in Aspirin?`
 ![Proof](/aspirin2.png?raw=true "biomistral1")
