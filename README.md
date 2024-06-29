@@ -14,7 +14,7 @@
 - Bookmark the olama terminal in MacOS Dock / Windows task bar
 - Check in a terminal: `ollama -v`
 - `ollama list` lists the installed models!
-- `ollama rm <Modelname>` delete a installed model!
+- `ollama rm <Modelname>` delete an installed model!
 
 # Official Mistral Website with AI gpt comparison
 - https://mistral.ai/news/mistral-large
