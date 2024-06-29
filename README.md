@@ -16,6 +16,8 @@
 - Check in a terminal: `ollama -v`
 - `ollama list` lists the installed models!
 - `ollama rm <Modelname>` delete an installed model!
+- exit commmandline chat by typing: `/bye`
+- Remove a model: `ollama rm <ModelName>`
 
 # Official Mistral Website with AI gpt comparison
 - https://mistral.ai/news/mistral-large
@@ -25,12 +27,6 @@
 - `/?` for help
 - `Was ist der Haupt-Wirkstoff in Aspirin?`
 ![Proof](/aspirin.png?raw=true "biomistral1")
-
-# Exit chat
-- stop commmandline chat by typing: `/bye`
-
-# Remove a model
-- Remove a model: `ollama rm <ModelName>`
 
 # Use as a chainlit chat
 - to use ollama as a python chainlit chat you can do the following, result can be seen on following screenshot:
