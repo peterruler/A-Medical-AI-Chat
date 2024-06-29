@@ -112,7 +112,7 @@
 - Was verursacht die saisonale Grippe?
 - Welche Medikamente würden gegen Kopfschmerzen verschrieben?
 
-# Mistral Model (Programmiersprachen besser ollama run codestral, very slow): ollama run mistral
+# Mistral Model (Programminglanguages better use ollama run codestral, very slow): ollama run mistral
 - Wie importiert man ein Package in Java?
 - Wie definiert man einen Type mit einem String und einem boolean in Typescript?
 - Schreibe mir ein Python Flask Server, der ein Hello World zurück gibt
