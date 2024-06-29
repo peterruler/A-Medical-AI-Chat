@@ -125,6 +125,6 @@
 - https://github.com/ggerganov/llama.cpp/tree/master/examples/finetune
 - https://rentry.org/cpu-lora
 
-# Screenshot of demo of another propmpt:
+# Screenshot of demo of another prompt:
 
 ![Proof](/mistral-code.png?raw=true "Mistral in english only")
