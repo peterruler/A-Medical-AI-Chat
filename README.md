@@ -89,7 +89,7 @@
 - edit Modefile with correct template
 - `ollama create biomistral1 -f Modelfile`
 
-# Additional browse for other med gguf M1 Mac models
+# Additional browse for other medical gguf M1 Mac models
 - for MacOS M1 SOC GPU no Cuda (PC & Linux)
 - https://huggingface.co/search/full-text?q=health+gguf&type=model
 
