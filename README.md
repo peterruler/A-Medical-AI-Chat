@@ -17,7 +17,6 @@
 - `ollama list` lists the installed models!
 - `ollama rm <Modelname>` delete an installed model!
 - exit commmandline chat by typing: `/bye`
-- Remove a model: `ollama rm <ModelName>`
 
 # Official Mistral Website with AI gpt comparison
 - https://mistral.ai/news/mistral-large
