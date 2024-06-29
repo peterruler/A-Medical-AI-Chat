@@ -83,6 +83,7 @@
 # Install a model thats not listed in the ollama directory (/library) (optional)
 - Create the ollama file from custom model:
 - (you can initialize, in case of manifest missing error do a `ollama run mistral` first, then:)
+- edit Modefile with correct template
 - `ollama create biomistral1 -f Modelfile`
 
 # Additional browse for other med gguf M1 Mac models
