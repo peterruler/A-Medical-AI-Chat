@@ -19,6 +19,9 @@
 # Chainlit Documentation
 - https://docs.chainlit.io/get-started/overview
 
+# Official Mistral Website with AI gpt comparison
+- https://mistral.ai/news/mistral-large
+
 ![Proof](/flask.png?raw=true "flask")
 
 # Useful tips and commands with ollama:
@@ -28,9 +31,6 @@
 - `/?` for help
 - `ollama rm <Modelname>` delete an installed model!
 - exit commmandline chat by typing: `/bye`
-
-# Official Mistral Website with AI gpt comparison
-- https://mistral.ai/news/mistral-large
 
 # Additional browse for other medical gguf M1 Mac models
 - for MacOS M1 SOC GPU no Cuda (PC & Linux)
