@@ -11,7 +11,7 @@
 
 ![Proof](/flask2.png?raw=true "flask")
 - same command to run a prompt
-- Bookmark the olama terminal in dock
+- Bookmark the olama terminal in MacOS dock / windows task bar
 - Check in a terminal: `ollama -v`
 - `ollama list` lists the installed models!
 - `ollama rm <Modelname>` delete a installed model!
