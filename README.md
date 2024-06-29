@@ -81,12 +81,15 @@
 - `ollama run biomistral1`
 
 # Run the chainlit-chat (optional)
+
 - `cd langchain-gemma-ollama-chainlit` change directory 
+
 - replace in langchain-gemma-ollama-chainlit-de.py: `model = Ollama(model="gemma:2b")` - instead of gemma:2b with your model name e.g. `mistral` or custom installation `biomistral1`.
-- and run the mistral code chat in a browser:
-- `chainlit run langchain-mistral-ollama-chainlit.py`
-- and run the biomistral (install custom) chat in a browser:
-- `chainlit run langchain-gemma-ollama-chainlit-de.py`
+
+- and run the chat in a browser:
+- `chainlit run langchain-gemma-ollama-chainlit-de.py` -> medical
+- `chainlit run langchain-mistral-ollama-chainlit.py` -> code
+
 ![Proof](/aspirin2.png?raw=true "biomistral1")
 
 # Install a model thats not listed in the ollama directory (/library) (optional)
@@ -101,12 +104,6 @@
 - `python -m pip install -U "huggingface_hub[cli]"`
 - start removing llms: `huggingface-cli delete-cache`
 - select via `Space` - don't select no action then enter und choose `Y`(es)
-
-# Run chainlit chat (optional)
-- `cd langchain-gemma-ollama-chainlit` change directory 
-- and run the chat in a browser:
-- `chainlit run langchain-gemma-ollama-chainlit-de.py` -> medical
-- `chainlit run langchain-mistral-ollama-chainlit-de.py` -> code
 
 # Example prompts (english)
 - What are the symptoms of the common cold?
