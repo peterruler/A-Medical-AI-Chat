@@ -1,28 +1,37 @@
 # A Medical AI Chat
 
 # Prerequisites
-- Have a fast, modern PC (best nvidia cuda support > 12 GB graphics ram), have patience, or use a M1 Mac
+- Have a fast, modern PC (best nvidia cuda support >= 12 GB graphics RAM), have patience, or use a M1 Mac or an AI web hosting with available GPU:
 - install ollama https://ollama.com - install for your system
 - choose the models for your domain: https://ollama.com/library
-- mistral is also in german
+- mistral is not in german anymore:
 - `ollama run mistral:latest` first call downloads model and runs it, ask something like:
 - `Schreibe mir ein Python Flask Server, der ein Hello World zurück gibt`
+- Mistral german is now custom only:-( - take source from: https://huggingface.co/TheBloke/em_german_leo_mistral-GGUF instead
 
-![Proof](/flask.png?raw=true "flask")
+![Proof](/flask2.png?raw=true "flask")
 - same command to run a prompt
 - Bookmark the olama terminal in dock
 - Check in a terminal: `ollama -v`
 - `ollama list` lists the installed models!
+- `ollama rm <Modelname>` delete a installed model!
+
+# Official Mistral Website with AI gpt comparison
+- https://mistral.ai/news/mistral-large
 
 # Test commandline chat
-- `ollama run biomistral` 7b - german, then ask sth. in german, see example prompts further down
-- `Was ist der haupt Wirkstoff in Aspirin?`
-![Proof](/aspirin.png?raw=true "biomistral")
+- `ollama run biomistral1` 7b - german, then ask sth. in german, see example prompts and needed Modelfile further down
+- `/?` for help
+- `Was ist der Haupt-Wirkstoff in Aspirin?`
+![Proof](/aspirin2.png?raw=true "biomistral1")
 
 # Exit chat
 - stop commmandline chat by typing: `/bye`
 
-# use as a chainlit chat
+# Remove a model
+- Remove a model: `ollama rm <ModelName>`
+
+# Use as a chainlit chat
 - to use ollama as a python chainlit chat you can do the following:
 
 # Based on a youtube clip
@@ -39,10 +48,7 @@
 - `pip install -r ./langchain-gemma-ollama-chainlit/requirements.txt`
 - `python -m ipykernel install --user --name torch --display-name "Python 3.9 (torch)"`
 - `pip install transformers==4.20.0`
-- `pip install langchain`
-- `pip install chainlit`
-- `pip install openai`
-- `pip install googletrans==4.0.0-rc1`
+- `pip install googletrans==4.0.0-rc1` (optional)
 - `conda install torch  -c pytorch-nightly`
 
 # GPU Acceleration M1 MacOS - use mps (optional)
@@ -57,7 +63,7 @@
 - then activate env by typing in console:
 - `conda activate torch`
 
-# Load Model - ggml-model-Q8_0.gguf - 7B Model  - M1 Mac needed - in german (optional)
+# Load custom Model - ggml-model-Q8_0.gguf - 7B Model  - M1 Mac needed - in german (optional)
 - In case a model is not listed on https://ollama.com/library:
 - First install the huggingface-cli:
 - `pip3 install huggingface-hub`
@@ -65,16 +71,17 @@
 - `huggingface-cli download BioMistral/BioMistral-7B-GGUF ggml-model-Q8_0.gguf --local-dir . --local-dir-use-symlinks False`
 - `ollama create biomistral1 -f Modelfile`
 - `ollama run biomistral1`
-- `cd langchain-gemma-ollama-chainlit` change directory 
 
 # Run the chainlit-chat (optional)
+- `cd langchain-gemma-ollama-chainlit` change directory 
 - replace in langchain-gemma-ollama-chainlit-de.py: `model = Ollama(model="gemma:2b")` - instead of gemma:2b with your model name e.g. mistral:latest or `biomistral1`.
 - and run the chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
 
 # Install a model thats not listed in the ollama directory (/library) (optional)
-- Create the ollama file from model:
-- `ollama create biomistral -f Modelfile`
+- Create the ollama file from custom model:
+- (you can initialize, in case of manifest missing error do a `ollama run mistral` first, then:)
+- `ollama create biomistral1 -f Modelfile`
 
 # Additional browse for other med gguf M1 Mac models
 - for MacOS M1 SOC GPU no Cuda (PC & Linux)
@@ -87,28 +94,30 @@
 - start removing llms: `huggingface-cli delete-cache`
 - select via `Space` - don't select no action then enter und choose `Y`(es)
 
-# run chainlit chat (optional)
+# Run chainlit chat (optional)
 - `cd langchain-gemma-ollama-chainlit` change directory 
 - and run the chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
 
-# Example prompts
+# Example prompts (english)
 - What are the symptoms of the common cold?
 - What causes the seasonal flu?
 - What medication would be prescribed for a headache?
 
-# Example prompts (german)
+# Example prompts (german) - with Biomistral trained and finetuned on medical domain:
 - Was sind die Symptome einer Erkältung?
 - Was verursacht die saisonale Grippe?
 - Welche Medikamente würden gegen Kopfschmerzen verschrieben?
-- ollama run mistral:latest
+
+# Mistral Model (Programmiersprachen besser ollama run codestral, very slow): ollama run mistral
 - Wie importiert man ein Package in Java?
 - Wie definiert man einen Type mit einem String und einem boolean in Typescript?
+- Schreibe mir ein Python Flask Server, der ein Hello World zurück gibt
 
-# finetune gguf models (optional)
+# Finetune gguf models (very optional, for experts only)
 - https://github.com/ggerganov/llama.cpp/tree/master/examples/finetune
 - https://rentry.org/cpu-lora
 
 # Screenshot of demo
 
-![Proof](/german-proof.png?raw=true "It works")
+![Proof](/mistral-code.png?raw=true "Mistral in english only")
