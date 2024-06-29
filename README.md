@@ -15,6 +15,7 @@
 - Bookmark the ollama terminal in MacOS Dock / Windows task bar
 - Check in a terminal: `ollama -v`
 - `ollama list` lists the installed models!
+- `/?` for help
 - `ollama rm <Modelname>` delete an installed model!
 - exit commmandline chat by typing: `/bye`
 
@@ -23,7 +24,6 @@
 
 # Test commandline chat
 - download and install via Modelfile first, then: `ollama run biomistral1` 7b - german, then ask sth. in german, see example prompts and needed Modelfile further down
-- `/?` for help
 - `Was ist der Haupt-Wirkstoff in Aspirin?`
 ![Proof](/aspirin.png?raw=true "biomistral1")
 
