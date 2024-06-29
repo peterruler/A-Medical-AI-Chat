@@ -73,6 +73,7 @@
 # Load custom Model - ggml-model-Q8_0.gguf - 7B Model  - M1 Mac needed - in german (optional)
 - In case a model is not listed on https://ollama.com/library:
 - First install the huggingface-cli:
+- `python -m pip install -U "huggingface_hub[cli]"`
 - `pip3 install huggingface-hub`
 - Load the model file to local cache (danger, have at least 6 GB of free space):
 - `huggingface-cli download BioMistral/BioMistral-7B-GGUF ggml-model-Q8_0.gguf --local-dir . --local-dir-use-symlinks False`
