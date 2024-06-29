@@ -10,7 +10,8 @@
 - Mistral german is now custom only:-( - take source from: https://huggingface.co/TheBloke/em_german_leo_mistral-GGUF instead
 
 ![Proof](/flask.png?raw=true "flask")
-- same command to run a prompt
+
+# Useful tip and commands with ollama:
 - Bookmark the olama terminal in MacOS Dock / Windows task bar
 - Check in a terminal: `ollama -v`
 - `ollama list` lists the installed models!
@@ -79,7 +80,7 @@
 - replace in langchain-gemma-ollama-chainlit-de.py: `model = Ollama(model="gemma:2b")` - instead of gemma:2b with your model name e.g. `mistral` or custom installation `biomistral1`.
 - and run the mistral code chat in a browser:
 - `chainlit run langchain-mistral-ollama-chainlit.py`
-- and run the biomistral (install custon) chat in a browser:
+- and run the biomistral (install custom) chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
 ![Proof](/aspirin2.png?raw=true "biomistral1")
 
