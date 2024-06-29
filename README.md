@@ -70,7 +70,7 @@
 - activate env by typing in console:
 - `conda activate torch`
 
-# Load custom Model - ggml-model-Q8_0.gguf - 7B Model  - M1 Mac needed - in german (optional)
+# Load custom Model - ggml-model-Q8_0.gguf - 7B Model - in german (optional)
 - In case a model is not listed on https://ollama.com/library:
 - First install the huggingface-cli:
 - `python -m pip install -U "huggingface_hub[cli]"`
@@ -80,23 +80,24 @@
 - `ollama create biomistral1 -f Modelfile`
 - `ollama run biomistral1`
 
-# Run the chainlit-chat (optional)
-
+# Install a model thats not listed in the ollama directory (/library)
 - `cd langchain-gemma-ollama-chainlit` change directory 
-
 - replace in langchain-gemma-ollama-chainlit-de.py: `model = Ollama(model="gemma:2b")` - instead of gemma:2b with your model name e.g. `mistral` or custom installation `biomistral1`.
+- edit Modefile with correct template
+- `ollama create biomistral1 -f Modelfile`
 
-- and run the chat in a browser:
+# On manifest missing error (optional)
+- Create the ollama file from custom model:
+- (you can initialize, in case of manifest missing error do a `ollama run mistral` first)
+
+
+#  Run the chat in a browser:
+- `cd langchain-gemma-ollama-chainlit` change directory 
 - `chainlit run langchain-gemma-ollama-chainlit-de.py` -> medical
 - `chainlit run langchain-mistral-ollama-chainlit.py` -> code
 
-![Proof](/aspirin2.png?raw=true "biomistral1")
 
-# Install a model thats not listed in the ollama directory (/library) (optional)
-- Create the ollama file from custom model:
-- (you can initialize, in case of manifest missing error do a `ollama run mistral` first, then:)
-- edit Modefile with correct template
-- `ollama create biomistral1 -f Modelfile`
+![Proof](/aspirin2.png?raw=true "biomistral1")
 
 # Delete Models in Huggingface cache if not needed or HD is full
 - show llms: `cd ~/.cache/huggingface/hub`
