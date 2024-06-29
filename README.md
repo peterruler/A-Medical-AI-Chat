@@ -13,6 +13,12 @@
 - `Schreibe mir einen Python Flask Server, der ein Hello World zurück gibt`
 - Mistral german is now custom only:-( - take source from: https://huggingface.co/TheBloke/em_german_leo_mistral-GGUF instead
 
+# Based on this youtube clip:
+- https://www.youtube.com/watch?v=bANziaFj_sA
+
+# Chainlit Documentation
+- https://docs.chainlit.io/get-started/overview
+
 ![Proof](/flask.png?raw=true "flask")
 
 # Useful tips and commands with ollama:
@@ -26,6 +32,10 @@
 # Official Mistral Website with AI gpt comparison
 - https://mistral.ai/news/mistral-large
 
+# Additional browse for other medical gguf M1 Mac models
+- for MacOS M1 SOC GPU no Cuda (PC & Linux)
+- https://huggingface.co/search/full-text?q=health+gguf&type=model
+
 # Test commandline chat
 - download and install via Modelfile first, then: `ollama run biomistral1` 7b - german, then ask sth. in german, see example prompts and needed Modelfile further down
 - `Was ist der Haupt-Wirkstoff in Aspirin?`
@@ -35,12 +45,6 @@
 - to use ollama as a python chainlit chat you can do the following, result can be seen on following screenshot:
 
 ![Proof](/flask2.png?raw=true "flask")
-
-# Based on this youtube clip:
-- https://www.youtube.com/watch?v=bANziaFj_sA
-
-# Chainlit Documentation
-- https://docs.chainlit.io/get-started/overview
 
 # Installation of python conda env (optional)
 - install miniconda first https://docs.conda.io/en/latest/miniconda.html
@@ -62,7 +66,7 @@
 - MacOS M1 https://www.youtube.com/watch?v=VEDy-c5Sk8Y&t=380s
 - other: https://www.youtube.com/results?search_query=jeff+heaton+pytorch+installation
 
-- then activate env by typing in console:
+- activate env by typing in console:
 - `conda activate torch`
 
 # Load custom Model - ggml-model-Q8_0.gguf - 7B Model  - M1 Mac needed - in german (optional)
@@ -88,10 +92,6 @@
 - (you can initialize, in case of manifest missing error do a `ollama run mistral` first, then:)
 - edit Modefile with correct template
 - `ollama create biomistral1 -f Modelfile`
-
-# Additional browse for other medical gguf M1 Mac models
-- for MacOS M1 SOC GPU no Cuda (PC & Linux)
-- https://huggingface.co/search/full-text?q=health+gguf&type=model
 
 # Delete Models in Huggingface cache if not needed or HD is full
 - show llms: `cd ~/.cache/huggingface/hub`
