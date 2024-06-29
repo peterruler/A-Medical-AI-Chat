@@ -22,6 +22,7 @@
 # Official Mistral Website with AI gpt comparison
 - https://mistral.ai/news/mistral-large
 
+# Example ollama run mistral with prompt:
 ![Proof](/flask.png?raw=true "flask")
 
 # Useful tips and commands with ollama:
