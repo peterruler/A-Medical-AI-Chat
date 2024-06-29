@@ -1,5 +1,9 @@
 # A Medical AI Chat
 
+# What this repo is about:
+- Install and use a medical gpt chat with custom Modelfile and Model download from huggingface.
+- Run a Mistral programming code generation gpt chat from ollama /library provided by default.
+
 # Prerequisites
 - Have a fast, modern PC (best is with nvidia cuda support and >= 12 GB graphics RAM), have patience, or use a M1 Mac or an AI web hosting with available GPU e.g. Azure:
 - install ollama https://ollama.com - install for your system
