@@ -11,7 +11,7 @@
 
 ![Proof](/flask.png?raw=true "flask")
 
-# Useful tip and commands with ollama:
+# Useful tipps and commands with ollama:
 - Bookmark the ollama terminal in MacOS Dock / Windows task bar
 - Check in a terminal: `ollama -v`
 - `ollama list` lists the installed models!
