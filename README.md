@@ -9,7 +9,7 @@
 - `Schreibe mir ein Python Flask Server, der ein Hello World zurück gibt`
 - Mistral german is now custom only:-( - take source from: https://huggingface.co/TheBloke/em_german_leo_mistral-GGUF instead
 
-![Proof](/flask2.png?raw=true "flask")
+![Proof](/flask.png?raw=true "flask")
 - same command to run a prompt
 - Bookmark the olama terminal in MacOS Dock / Windows task bar
 - Check in a terminal: `ollama -v`
@@ -23,7 +23,7 @@
 - download and install via Modelfile first, then: `ollama run biomistral1` 7b - german, then ask sth. in german, see example prompts and needed Modelfile further down
 - `/?` for help
 - `Was ist der Haupt-Wirkstoff in Aspirin?`
-![Proof](/aspirin2.png?raw=true "biomistral1")
+![Proof](/aspirin.png?raw=true "biomistral1")
 
 # Exit chat
 - stop commmandline chat by typing: `/bye`
@@ -32,7 +32,9 @@
 - Remove a model: `ollama rm <ModelName>`
 
 # Use as a chainlit chat
-- to use ollama as a python chainlit chat you can do the following:
+- to use ollama as a python chainlit chat you can do the following, result can be seen on following screenshot:
+
+![Proof](/flask2.png?raw=true "flask")
 
 # Based on this youtube clip:
 - https://www.youtube.com/watch?v=bANziaFj_sA
@@ -79,6 +81,7 @@
 - `chainlit run langchain-mistral-ollama-chainlit.py`
 - and run the biomistral (install custon) chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
+![Proof](/aspirin2.png?raw=true "biomistral1")
 
 # Install a model thats not listed in the ollama directory (/library) (optional)
 - Create the ollama file from custom model:
