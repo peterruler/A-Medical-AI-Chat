@@ -100,7 +100,8 @@
 # Run chainlit chat (optional)
 - `cd langchain-gemma-ollama-chainlit` change directory 
 - and run the chat in a browser:
-- `chainlit run langchain-gemma-ollama-chainlit-de.py`
+- `chainlit run langchain-gemma-ollama-chainlit-de.py` -> medical
+- `chainlit run langchain-mistral-ollama-chainlit-de.py` -> code
 
 # Example prompts (english)
 - What are the symptoms of the common cold?
