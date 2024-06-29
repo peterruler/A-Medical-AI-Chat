@@ -75,7 +75,9 @@
 # Run the chainlit-chat (optional)
 - `cd langchain-gemma-ollama-chainlit` change directory 
 - replace in langchain-gemma-ollama-chainlit-de.py: `model = Ollama(model="gemma:2b")` - instead of gemma:2b with your model name e.g. mistral:latest or `biomistral1`.
-- and run the chat in a browser:
+- and run the mistral code chat in a browser:
+- `chainlit run angchain-mistral-ollama-chainlit.py`
+- and run the biomistral (install custon) chat in a browser:
 - `chainlit run langchain-gemma-ollama-chainlit-de.py`
 
 # Install a model thats not listed in the ollama directory (/library) (optional)
