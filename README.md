@@ -34,7 +34,7 @@
 # Use as a chainlit chat
 - to use ollama as a python chainlit chat you can do the following:
 
-# Based on a youtube clip
+# Based on this youtube clip:
 - https://www.youtube.com/watch?v=bANziaFj_sA
 
 # Chainlit Documentation
