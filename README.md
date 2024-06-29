@@ -5,7 +5,7 @@
 - install ollama https://ollama.com - install for your system
 - choose the models for your domain: https://ollama.com/library
 - mistral is not in german anymore:
-- `ollama run mistral:latest` first call downloads model and runs it, ask something like:
+- `ollama run mistral` first call downloads model and runs it, ask something like:
 - `Schreibe mir ein Python Flask Server, der ein Hello World zurück gibt`
 - Mistral german is now custom only:-( - take source from: https://huggingface.co/TheBloke/em_german_leo_mistral-GGUF instead
 
