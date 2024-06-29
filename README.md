@@ -115,7 +115,7 @@
 # Mistral Model (Programminglanguages better use ollama run codestral, very slow): ollama run mistral
 - Wie importiert man ein Package in Java?
 - Wie definiert man einen Type mit einem String und einem boolean in Typescript?
-- Schreibe mir ein Python Flask Server, der ein Hello World zurück gibt
+- Schreibe mir einen Python Flask Server, der ein Hello World zurück gibt
 
 # Finetune gguf models (very optional, for experts only)
 - https://github.com/ggerganov/llama.cpp/tree/master/examples/finetune
